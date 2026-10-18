@@ -1,0 +1,30 @@
+{
+  "_keterangan": "Conditional Probability Table (CPT) bawaan untuk Bayesian Network AmbuRoute.",
+  "_asumsi": "ASUMSI: Semua nilai probabilitas di bawah adalah asumsi, bukan data nyata dari lapangan.",
+  "_rumus_lokal": "ASUMSI: P(Macet=Ya | lokal) = max(0.02, min(0.98, P(Macet=Ya | utama) - 0.15))",
+  "variabel": {
+    "Jam": ["Sibuk", "Normal"],
+    "Cuaca": ["Hujan", "Cerah"],
+    "HariPasar": ["Ya", "Tidak"],
+    "TipeRuas": ["utama", "lokal"],
+    "Macet": ["Ya", "Tidak"]
+  },
+  "cpt": [
+    {"jam": "Sibuk",  "cuaca": "Hujan", "hari_pasar": "Ya",   "tipe_ruas": "utama", "p_macet_ya": 0.95, "_asumsi": true},
+    {"jam": "Sibuk",  "cuaca": "Hujan", "hari_pasar": "Tidak","tipe_ruas": "utama", "p_macet_ya": 0.85, "_asumsi": true},
+    {"jam": "Sibuk",  "cuaca": "Cerah", "hari_pasar": "Ya",   "tipe_ruas": "utama", "p_macet_ya": 0.80, "_asumsi": true},
+    {"jam": "Sibuk",  "cuaca": "Cerah", "hari_pasar": "Tidak","tipe_ruas": "utama", "p_macet_ya": 0.60, "_asumsi": true},
+    {"jam": "Normal", "cuaca": "Hujan", "hari_pasar": "Ya",   "tipe_ruas": "utama", "p_macet_ya": 0.60, "_asumsi": true},
+    {"jam": "Normal", "cuaca": "Hujan", "hari_pasar": "Tidak","tipe_ruas": "utama", "p_macet_ya": 0.40, "_asumsi": true},
+    {"jam": "Normal", "cuaca": "Cerah", "hari_pasar": "Ya",   "tipe_ruas": "utama", "p_macet_ya": 0.35, "_asumsi": true},
+    {"jam": "Normal", "cuaca": "Cerah", "hari_pasar": "Tidak","tipe_ruas": "utama", "p_macet_ya": 0.10, "_asumsi": true},
+    {"jam": "Sibuk",  "cuaca": "Hujan", "hari_pasar": "Ya",   "tipe_ruas": "lokal", "p_macet_ya": 0.80, "_asumsi": true},
+    {"jam": "Sibuk",  "cuaca": "Hujan", "hari_pasar": "Tidak","tipe_ruas": "lokal", "p_macet_ya": 0.70, "_asumsi": true},
+    {"jam": "Sibuk",  "cuaca": "Cerah", "hari_pasar": "Ya",   "tipe_ruas": "lokal", "p_macet_ya": 0.65, "_asumsi": true},
+    {"jam": "Sibuk",  "cuaca": "Cerah", "hari_pasar": "Tidak","tipe_ruas": "lokal", "p_macet_ya": 0.45, "_asumsi": true},
+    {"jam": "Normal", "cuaca": "Hujan", "hari_pasar": "Ya",   "tipe_ruas": "lokal", "p_macet_ya": 0.45, "_asumsi": true},
+    {"jam": "Normal", "cuaca": "Hujan", "hari_pasar": "Tidak","tipe_ruas": "lokal", "p_macet_ya": 0.25, "_asumsi": true},
+    {"jam": "Normal", "cuaca": "Cerah", "hari_pasar": "Ya",   "tipe_ruas": "lokal", "p_macet_ya": 0.20, "_asumsi": true},
+    {"jam": "Normal", "cuaca": "Cerah", "hari_pasar": "Tidak","tipe_ruas": "lokal", "p_macet_ya": 0.02, "_asumsi": true}
+  ]
+}

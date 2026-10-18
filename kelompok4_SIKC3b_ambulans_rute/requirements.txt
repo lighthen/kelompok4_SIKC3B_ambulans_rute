@@ -1,0 +1,25 @@
+# Dependensi AmbuRoute
+# Versi di-pin saat pengembangan. Jalankan: pip install -r requirements.txt
+
+# Graf dan A*
+networkx==3.3
+
+# Bayesian Network (opsional - ada fallback dict Python jika gagal install)
+pgmpy==0.1.26
+
+# Olah data
+pandas==2.2.2
+
+# Pengujian
+pytest==8.2.2
+
+# Antarmuka
+streamlit==1.36.0
+
+# Visualisasi
+matplotlib==3.9.0
+folium==0.17.0
+
+# Dependensi pendukung pgmpy
+numpy==1.26.4
+scipy==1.13.1

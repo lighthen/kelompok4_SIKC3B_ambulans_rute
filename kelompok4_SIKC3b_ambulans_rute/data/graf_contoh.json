@@ -1,0 +1,18 @@
+{
+  "_keterangan": "Graf contoh AmbuRoute - 5 simpul, 5 ruas. Koordinat dalam km.",
+  "_asumsi": "Koordinat dipilih agar jarak garis lurus <= jarak ruas (syarat heuristik admissible). Kecepatan lancar 40 km/jam.",
+  "simpul": [
+    {"id": "A",  "nama": "Lokasi Kejadian", "koordinat": {"x": 0.0,  "y":  0.0}},
+    {"id": "B",  "nama": "Simpul B",        "koordinat": {"x": 2.0,  "y":  0.0}},
+    {"id": "C",  "nama": "Simpul C",        "koordinat": {"x": 1.5,  "y": -1.0}},
+    {"id": "D",  "nama": "Simpul D",        "koordinat": {"x": 3.5,  "y": -1.0}},
+    {"id": "RS", "nama": "Rumah Sakit",     "koordinat": {"x": 5.0,  "y":  0.0}}
+  ],
+  "ruas": [
+    {"id": "A-B",  "dari": "A",  "ke": "B",  "jarak_km": 2.0, "tipe": "utama", "kecepatan_kmh": 40},
+    {"id": "B-RS", "dari": "B",  "ke": "RS", "jarak_km": 3.0, "tipe": "utama", "kecepatan_kmh": 40},
+    {"id": "A-C",  "dari": "A",  "ke": "C",  "jarak_km": 2.5, "tipe": "lokal", "kecepatan_kmh": 40},
+    {"id": "C-D",  "dari": "C",  "ke": "D",  "jarak_km": 2.0, "tipe": "lokal", "kecepatan_kmh": 40},
+    {"id": "D-RS", "dari": "D",  "ke": "RS", "jarak_km": 2.0, "tipe": "lokal", "kecepatan_kmh": 40}
+  ]
+}
