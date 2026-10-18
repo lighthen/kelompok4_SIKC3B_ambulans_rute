@@ -62,7 +62,7 @@ Fungsi pembanding: BFS, Dijkstra, rute terpendek jarak.
 ### 1. Clone repositori
 
 ```bash
-git clone https://github.com/USERNAME/kelompok4_SIKC3b_ambulans_rute.git
+git clone https://github.com/lighthen/kelompok4_SIKC3B_ambulans_rute.git
 cd kelompok4_SIKC3b_ambulans_rute
 ```
 
