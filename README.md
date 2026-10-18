@@ -1,10 +1,14 @@
 # kelompok4_SIKC3B_ambulans_rute
 Untuk kebutuhan mata kuliah kecerdasan buatan
 
-# AmbuRoute — Sistem Pencari Rute Tercepat Ambulans
+# AmbuRoute — Sistem Pencarian Rute Tercepat Ambulans
 
-Proyek UTS Kecerdasan Buatan (S1 Sistem Informasi Kota Cerdas).
-Kelompok 4 — SIKC 3B.
+Proyek UTS Kecerdasan Buatan
+Kelompok 4 - SIKC 3B
+1. Hendra Nurfatkhurrohman - 2407067
+2. Widia Rina Lestari - 2407061
+3. Nurizkya Mutiara Nisa - 2407031
+4. Andea Asmanah - 2407062
 
 AmbuRoute mencari rute tercepat ambulans dari lokasi kejadian ke rumah sakit
 dengan mempertimbangkan kemacetan probabilistik dan pemblokiran jalan menggunakan
@@ -14,7 +18,7 @@ tiga metode AI yang terintegrasi secara berantai.
 
 ## Metode AI yang Digunakan
 
-Ketiga metode bekerja secara berantai — hasil satu metode menjadi input metode berikutnya:
+Ketiga metode bekerja secara berantai hasil satu metode menjadi input metode berikutnya:
 
 ### 1. First Order Logic (FOL)
 Menentukan status tiap ruas: **Terblokir**, **Terbatas**, atau **Dapat Dilalui**.
@@ -62,8 +66,6 @@ git clone https://github.com/USERNAME/kelompok4_SIKC3b_ambulans_rute.git
 cd kelompok4_SIKC3b_ambulans_rute
 ```
 
-> Ganti `USERNAME` dengan nama akun GitHub Anda.
-
 ### 2. Buat dan aktifkan virtual environment
 
 **Windows (PowerShell):**
@@ -104,16 +106,6 @@ Buka browser di `http://localhost:8501`.
 
 ---
 
-## Pengujian Otomatis
-
-```bash
-pytest
-```
-
-Konfigurasi pengujian ada di `pytest.ini` (folder `tes/`, berkas `tes_*.py`).
-
----
-
 ## Struktur Repositori
 
 ```
@@ -146,10 +138,6 @@ kelompok4_SIKC3b_ambulans_rute/
     └── tes_smoke_aplikasi.py      # uji asap antarmuka Streamlit
 ```
 
-> Folder `dokumen/` akan dibuat otomatis saat aplikasi/tes dijalankan
-> (berisi ekspor `basis_pengetahuan.md`) dan tidak ikut di-commit.
-
----
 
 ## Penjelasan Basis Pengetahuan
 
